@@ -3,4 +3,5 @@ class Post < ApplicationRecord
   validates :title, presence: true
   validates :body, length: { in: 10..1000 }
   validates :link, presence: true
+  belongs_to :user
 end
